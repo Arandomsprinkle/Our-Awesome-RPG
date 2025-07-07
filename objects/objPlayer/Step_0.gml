@@ -13,12 +13,20 @@ if (!moving) {
         startY = y;
         targetX = x + _inputX * TILESIZE;
         targetY = y + _inputY * TILESIZE;
-        moveX = _inputX * moveSpeed;
-        moveY = _inputY * moveSpeed;
+	    
+		//Tile-based Collision
+	    var _tilemap = layer_tilemap_get_id("Collision");
+	    var _tileX = targetX div TILESIZE;
+	    var _tileY = targetY div TILESIZE;
+	    var _tileIndex = tilemap_get(_tilemap, _tileX, _tileY);
 
-        totalDistance = abs(targetX - startX) + abs(targetY - startY); //Important for diagonal
-        moving = true;
-    }
+	    if (_tileIndex != 1) {
+	        moveX = _inputX * moveSpeed;
+	        moveY = _inputY * moveSpeed;
+	        totalDistance = abs(targetX - startX) + abs(targetY - startY);
+	        moving = true;
+	    }
+	}
 }
 else {
 	x += moveX;
