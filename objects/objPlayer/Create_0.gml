@@ -9,3 +9,5 @@ targetY = 0;
 directionIndex = 0;
 totalDistance = 0;
 moveSpeed = 1;
+
+inventory = []; //Will flesh this out later.

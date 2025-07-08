@@ -65,6 +65,6 @@ if (!moving && _interact) {
     var _target = collision_point(_frontX, _frontY, objInteractable, false, true);
 	
 	with _target {
-		show_message(defaultMessage);
+		active = true;
 	}
 }
