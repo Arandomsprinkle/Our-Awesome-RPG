@@ -56,8 +56,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Test Stuff",
-    "path":"folders/Sprites/Test Stuff.yy",
+    "name":"Entities",
+    "path":"folders/Sprites/Test Stuff/Entities.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
