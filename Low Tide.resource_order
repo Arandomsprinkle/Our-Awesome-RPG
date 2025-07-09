@@ -28,8 +28,10 @@
     {"name":"objEntity","order":1,"path":"objects/objEntity/objEntity.yy",},
     {"name":"objTestInteract","order":4,"path":"objects/objTestInteract/objTestInteract.yy",},
     {"name":"objWasp","order":1,"path":"objects/objWasp/objWasp.yy",},
+    {"name":"rmSandbox","order":1,"path":"rooms/rmSandbox/rmSandbox.yy",},
     {"name":"sprChecker","order":3,"path":"sprites/sprChecker/sprChecker.yy",},
     {"name":"sprCollision","order":5,"path":"sprites/sprCollision/sprCollision.yy",},
+    {"name":"sprMainTiles","order":6,"path":"sprites/sprMainTiles/sprMainTiles.yy",},
     {"name":"sprNoIcon","order":4,"path":"sprites/sprNoIcon/sprNoIcon.yy",},
     {"name":"sprTestBerry","order":1,"path":"sprites/sprTestBerry/sprTestBerry.yy",},
     {"name":"sprTestFish","order":2,"path":"sprites/sprTestFish/sprTestFish.yy",},
@@ -40,5 +42,6 @@
     {"name":"sprTestTiles","order":1,"path":"sprites/sprTestTiles/sprTestTiles.yy",},
     {"name":"sprTestWasp","order":2,"path":"sprites/sprTestWasp/sprTestWasp.yy",},
     {"name":"tCollision","order":2,"path":"tilesets/tCollision/tCollision.yy",},
+    {"name":"tMainTiles","order":3,"path":"tilesets/tMainTiles/tMainTiles.yy",},
   ],
 }
