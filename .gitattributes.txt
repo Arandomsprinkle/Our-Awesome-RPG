@@ -1,0 +1,16 @@
+# GameMaker Studio 2 specific attributes
+# --------------------------------------
+# Force line endings to LF (Line Feed) for .yy and .yyp files.
+# This is CRITICAL for cross-platform consistency (Windows uses CRLF, macOS/Linux use LF)
+# and prevents spurious "changes" and merge conflicts due to line ending differences.
+*.yy text eol=lf
+*.yyp text eol=lf
+
+# Mark .yy files as "linguist-generated" for GitHub/GitLab
+# This prevents GitHub's language detection from misidentifying .yy files
+# (which are JSON-like) as other languages, and also helps with diffing.
+*.yy linguist-language=JSON linguist-generated
+*.yyp linguist-language=JSON linguist-generated
+
+# Ensure GML files are recognized as Game Maker Language
+*.gml linguist-language=GameMakerLanguage
