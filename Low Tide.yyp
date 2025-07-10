@@ -43,6 +43,7 @@
   "name":"Low Tide",
   "resources":[
     {"id":{"name":"fSilk","path":"fonts/fSilk/fSilk.yy",},},
+    {"id":{"name":"objBlankTest","path":"objects/objBlankTest/objBlankTest.yy",},},
     {"id":{"name":"objController","path":"objects/objController/objController.yy",},},
     {"id":{"name":"objEntity","path":"objects/objEntity/objEntity.yy",},},
     {"id":{"name":"objInteractable","path":"objects/objInteractable/objInteractable.yy",},},

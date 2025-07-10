@@ -24,6 +24,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"objBlankTest","order":6,"path":"objects/objBlankTest/objBlankTest.yy",},
     {"name":"objController","order":1,"path":"objects/objController/objController.yy",},
     {"name":"objEntity","order":1,"path":"objects/objEntity/objEntity.yy",},
     {"name":"objTestInteract","order":4,"path":"objects/objTestInteract/objTestInteract.yy",},
