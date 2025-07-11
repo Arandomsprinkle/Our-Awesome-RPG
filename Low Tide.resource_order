@@ -25,6 +25,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"objBlankTest","order":6,"path":"objects/objBlankTest/objBlankTest.yy",},
+    {"name":"objCamera","order":7,"path":"objects/objCamera/objCamera.yy",},
     {"name":"objController","order":1,"path":"objects/objController/objController.yy",},
     {"name":"objEntity","order":1,"path":"objects/objEntity/objEntity.yy",},
     {"name":"objTestInteract","order":4,"path":"objects/objTestInteract/objTestInteract.yy",},
@@ -32,6 +33,8 @@
     {"name":"objWasp","order":1,"path":"objects/objWasp/objWasp.yy",},
     {"name":"rm_title","order":2,"path":"rooms/rm_title/rm_title.yy",},
     {"name":"rmSandbox","order":1,"path":"rooms/rmSandbox/rmSandbox.yy",},
+    {"name":"camera_build_regions","order":1,"path":"scripts/camera_build_regions/camera_build_regions.yy",},
+    {"name":"sprCamera","order":1,"path":"sprites/sprCamera/sprCamera.yy",},
     {"name":"sprChecker","order":3,"path":"sprites/sprChecker/sprChecker.yy",},
     {"name":"sprCollision","order":5,"path":"sprites/sprCollision/sprCollision.yy",},
     {"name":"sprMainTiles","order":6,"path":"sprites/sprMainTiles/sprMainTiles.yy",},
