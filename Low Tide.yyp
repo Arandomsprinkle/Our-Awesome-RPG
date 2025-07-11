@@ -51,7 +51,9 @@
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"objSnake","path":"objects/objSnake/objSnake.yy",},},
     {"id":{"name":"objTestInteract","path":"objects/objTestInteract/objTestInteract.yy",},},
+    {"id":{"name":"objTitleController","path":"objects/objTitleController/objTitleController.yy",},},
     {"id":{"name":"objWasp","path":"objects/objWasp/objWasp.yy",},},
+    {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"id":{"name":"rmSandbox","path":"rooms/rmSandbox/rmSandbox.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"camera_build_regions","path":"scripts/camera_build_regions/camera_build_regions.yy",},},
@@ -79,6 +81,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rmSandbox","path":"rooms/rmSandbox/rmSandbox.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
