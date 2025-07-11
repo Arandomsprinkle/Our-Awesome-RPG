@@ -44,6 +44,7 @@
   "resources":[
     {"id":{"name":"fSilk","path":"fonts/fSilk/fSilk.yy",},},
     {"id":{"name":"objBlankTest","path":"objects/objBlankTest/objBlankTest.yy",},},
+    {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
     {"id":{"name":"objController","path":"objects/objController/objController.yy",},},
     {"id":{"name":"objEntity","path":"objects/objEntity/objEntity.yy",},},
     {"id":{"name":"objInteractable","path":"objects/objInteractable/objInteractable.yy",},},
@@ -53,7 +54,9 @@
     {"id":{"name":"objWasp","path":"objects/objWasp/objWasp.yy",},},
     {"id":{"name":"rmSandbox","path":"rooms/rmSandbox/rmSandbox.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"camera_build_regions","path":"scripts/camera_build_regions/camera_build_regions.yy",},},
     {"id":{"name":"init","path":"scripts/init/init.yy",},},
+    {"id":{"name":"sprCamera","path":"sprites/sprCamera/sprCamera.yy",},},
     {"id":{"name":"sprChecker","path":"sprites/sprChecker/sprChecker.yy",},},
     {"id":{"name":"sprCollision","path":"sprites/sprCollision/sprCollision.yy",},},
     {"id":{"name":"sprController","path":"sprites/sprController/sprController.yy",},},
