@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+/// @description Insert description here
+// You can write your code in this editor
 
 var _inputPressed = keyboard_check_pressed(ord("F")) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter);
 var _keyUp = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))
@@ -25,7 +27,7 @@ if (!isTyping && !isWaiting && array_length(dialogueQueue) > 0) {
 	global.isPaused = 1;
 }
 
-// Typing text
+//Typing effect
 if (isTyping) {
 	charTimer++;
 
@@ -51,7 +53,7 @@ if (isTyping) {
 	}
 }
 
-// Choices
+//Choice stuff
 if (isWaiting && array_length(choices) > 0) {
 	if (_keyUp) {
 	    selectedChoice = (selectedChoice - 1 + array_length(choices)) mod array_length(choices);

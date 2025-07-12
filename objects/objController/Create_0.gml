@@ -3,4 +3,4 @@
 
 global.cameraFollowEnabled = true;
 global.textSpeed = 2;
-global.isPaused = 0;
+global.isPaused = false;

@@ -1,3 +1,5 @@
+/// @description Insert description here
+// You can write your code in this editor
 var _upKey = keyboard_check(vk_up) || keyboard_check(ord("W"));
 var _downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
 var _selectKey = keyboard_check(vk_enter) || keyboard_check(vk_space);
