@@ -40,6 +40,14 @@ else {
 }
 
 //keep the goddamn FUCKING CAMERA INSIDE THE BOUNDARIES >:OOOOOOOO
+if (currentRegionIndex == -1) || (currentRegionIndex >= array_length(global.cameraRegions)) {
+	if (array_length(global.cameraRegions) > 0) {
+		currentRegionIndex = 0;
+	} else {
+		show_debug_message("ERROR: no camera regions defined or player not in any region. Camera logic aborted.");
+		camera_set_view_pos(_cam, _px - _viewW * 0.5, _py - _viewH * 0.5);
+	}
+}
 var _region = global.cameraRegions[currentRegionIndex];
 var _targetX = _px - _viewW * 0.5;
 var _targetY = _py - _viewH * 0.5;

@@ -53,7 +53,7 @@ function camera_build_regions(_layerName, _tileIndex) {
 			//Done? Mark those tiles as visted (visted by the script, not the player, just to be clear)
             for (var _yy = _top; _yy <= _bottom; _yy++) {
                 for (var _xx = _left; _xx <= _right; _xx++) {
-                    _visited[_y * _mapW + _x] = true;
+                    _visited[_yy * _mapW + _xx] = true;
                 }
             }
 			
