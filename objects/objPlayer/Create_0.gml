@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 moving = false;
-startX = x;
-startY = y;
+startX = y;
+startY = x;
 moveX = 0;
 moveY = 0;
 targetX = 0;

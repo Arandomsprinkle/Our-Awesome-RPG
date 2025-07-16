@@ -28,6 +28,7 @@
     {"name":"objCamera","order":7,"path":"objects/objCamera/objCamera.yy",},
     {"name":"objController","order":1,"path":"objects/objController/objController.yy",},
     {"name":"objDialogueBox","order":8,"path":"objects/objDialogueBox/objDialogueBox.yy",},
+    {"name":"objEarlyEnding","order":10,"path":"objects/objEarlyEnding/objEarlyEnding.yy",},
     {"name":"objEntity","order":1,"path":"objects/objEntity/objEntity.yy",},
     {"name":"objTestInteract","order":4,"path":"objects/objTestInteract/objTestInteract.yy",},
     {"name":"objTitleController","order":9,"path":"objects/objTitleController/objTitleController.yy",},
