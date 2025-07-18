@@ -44,7 +44,6 @@ else {
     if ((moveX > 0 && x >= targetX) || (moveX < 0 && x <= targetX)) {x = targetX;}
     if ((moveY > 0 && y >= targetY) || (moveY < 0 && y <= targetY)) {y = targetY;}
     if (x == targetX && y == targetY) {
-		show_debug_message("Player X: " + string(x) + ", Player Y: " + string(y));
 		moving = false;
 	}
 }

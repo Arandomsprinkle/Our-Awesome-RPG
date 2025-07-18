@@ -4,8 +4,6 @@
 
 name = "";
 hostile = false;
-hp = 10;
-hpMax = 10;
 hp = 25;
 hpMax = 25;
 damage = 1;
