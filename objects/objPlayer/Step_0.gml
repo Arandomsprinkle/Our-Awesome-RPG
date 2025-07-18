@@ -68,8 +68,10 @@ if (!moving && _interact) {
 	var _frontY = y + _dirY[directionIndex] * TILESIZE;
     var _target = collision_point(_frontX, _frontY, objInteractable, false, true);
 	
-	with _target {
-		active = true;
+	if (instance_exists(_target)) {
+		with _target {
+			active = true;
+		}
 	}
 }
 
