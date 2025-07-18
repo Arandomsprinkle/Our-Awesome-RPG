@@ -2,9 +2,10 @@
 // You can write your code in this editor
 
 //Input
-var _inputX = (keyboard_check(vk_right) || keyboard_check(ord("D"))) - (keyboard_check(vk_left) || keyboard_check(ord("A")));
-var _inputY = (keyboard_check(vk_down) || keyboard_check(ord("S"))) - (keyboard_check(vk_up) || keyboard_check(ord("W")));
-var _interact = (keyboard_check(vk_space) || keyboard_check(ord("F")) || keyboard_check(vk_enter));
+var _inputX = (keyboard_check(global.keyRight)) - (keyboard_check(global.keyLeft));
+var _inputY = (keyboard_check(global.keyDown)) - (keyboard_check(global.keyUp));
+var _interact = (keyboard_check(global.keyInteract));
+var _attack = keyboard_check(global.keyAttack);
 
 if global.isPaused exit
 
@@ -76,7 +77,7 @@ if (!moving && _interact) {
 }
 
 //Attacking
-if (keyboard_check_pressed(vk_space)) {
+if (_attack) {
     var _dirX = [1, 1, 0, -1, -1, -1, 0, 1];
     var _dirY = [0, -1, -1, -1, 0, 1, 1, 1];
 
