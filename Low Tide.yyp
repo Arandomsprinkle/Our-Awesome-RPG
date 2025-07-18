@@ -88,8 +88,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rmTitle","path":"rooms/rmTitle/rmTitle.yy",},},
     {"roomId":{"name":"rmSandbox","path":"rooms/rmSandbox/rmSandbox.yy",},},
+    {"roomId":{"name":"rmTitle","path":"rooms/rmTitle/rmTitle.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",

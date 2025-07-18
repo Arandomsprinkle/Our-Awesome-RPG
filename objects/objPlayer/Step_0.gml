@@ -10,7 +10,6 @@ if global.isPaused exit
 
 //Movement
 if (!moving) {
-	show_debug_message("Player X: " + string(x) + ", Player Y: " + string(y));
     if (_inputX != 0 || _inputY != 0) {
         directionIndex = (round(point_direction(0, 0, _inputX, _inputY) / 45)) mod 8;
 
@@ -44,7 +43,10 @@ else {
 
     if ((moveX > 0 && x >= targetX) || (moveX < 0 && x <= targetX)) {x = targetX;}
     if ((moveY > 0 && y >= targetY) || (moveY < 0 && y <= targetY)) {y = targetY;}
-    if (x == targetX && y == targetY) {moving = false;}
+    if (x == targetX && y == targetY) {
+		show_debug_message("Player X: " + string(x) + ", Player Y: " + string(y));
+		moving = false;
+	}
 }
 
 //Animation

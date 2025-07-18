@@ -12,6 +12,8 @@
     {"name":"inst_617AB782","path":"rooms/rmSandbox/rmSandbox.yy",},
     {"name":"inst_159FA6FA","path":"rooms/rmSandbox/rmSandbox.yy",},
     {"name":"inst_28F19083","path":"rooms/rmSandbox/rmSandbox.yy",},
+    {"name":"inst_11AF2270","path":"rooms/rmSandbox/rmSandbox.yy",},
+    {"name":"inst_B3B5DEF","path":"rooms/rmSandbox/rmSandbox.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -30,6 +32,8 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objTestInteract","path":"objects/objTestInteract/objTestInteract.yy",},"propertyId":{"name":"funct","path":"objects/objTestInteract/objTestInteract.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"rock\"",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":145.0,"y":9538.0,},
         {"$GMRInstance":"v2","%Name":"inst_28F19083","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28F19083","objectId":{"name":"objEarlyEnding","path":"objects/objEarlyEnding/objEarlyEnding.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1168.0,"y":9904.0,},
+        {"$GMRInstance":"v2","%Name":"inst_11AF2270","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11AF2270","objectId":{"name":"objSnake","path":"objects/objSnake/objSnake.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":336.0,"y":9712.0,},
+        {"$GMRInstance":"v2","%Name":"inst_B3B5DEF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B3B5DEF","objectId":{"name":"objWasp","path":"objects/objWasp/objWasp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":9729.0,},
       ],"layers":[],"name":"Entities","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Events","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Events","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRTileLayer":"","%Name":"Collision","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":625,"SerialiseWidth":625,"TileCompressedData":[
