@@ -14,4 +14,8 @@ moveSpeed = 1;
 canAttack = true;
 canInteract = true;
 
+dirX = [1, 1, 0, -1, -1, -1, 0, 1];
+dirY = [0, -1, -1, -1, 0, 1, 1, 1];
+
+
 inventory = []; //Will flesh this out later.

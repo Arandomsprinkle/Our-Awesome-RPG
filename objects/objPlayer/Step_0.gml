@@ -9,6 +9,11 @@ var _attack = keyboard_check_pressed(global.keyAttack);
 
 if global.isPaused exit;
 
+var _dx = dirX[directionIndex];
+var _dy = dirY[directionIndex];
+var _tileX = x + _dx * TILESIZE;
+var _tileY = y + _dy * TILESIZE;
+
 //Movement
 if (!moving) {
     if (_inputX != 0 || _inputY != 0) {
@@ -64,14 +69,10 @@ else {
 //Interaction
 if (!moving && canInteract && _interact) {
 	canInteract = false;
-    var _dirX = [1, 1, 0, -1, -1, -1, 0, 1];
-	var _dirY = [0, -1, -1, -1, 0, 1, 1, 1];
-	var _frontX = x + _dirX[directionIndex] * TILESIZE;
-	var _frontY = y + _dirY[directionIndex] * TILESIZE;
-    var _target = collision_point(_frontX, _frontY, objInteractable, false, true);
-	
-	if !_target.active {
-		with _target {
+
+	var _target = collision_point(_tileX, _tileY, objInteractable, false, true);
+	if (instance_exists(_target) && !_target.active) {
+		with (_target) {
 			active = true;
 		}
 	}
@@ -82,7 +83,30 @@ if (!keyboard_check(global.keyInteract)) {
 	canInteract = true;
 }
 
-//Attacking
+if (_attack) {
+	var _attackAngle = directionIndex * 45;
+	var _attack_instance = instance_create_layer(_tileX, _tileY, "entities", objPlayerAttack);
+	_attack_instance.image_angle = _attackAngle;
+
+	//Hit the enemy (whole tile)
+	with (objEntity) {
+		if (bbox_right > _tileX && bbox_left < _tileX + TILESIZE &&
+		    bbox_bottom > _tileY && bbox_top < _tileY + TILESIZE) {
+			var _damageDealt = 10;
+			var _hpBefore = hp;
+			hp -= _damageDealt;
+			var _hpAfter = hp;
+			show_debug_message("Hit " + object_get_name(object_index) + ": HP Before = " + string(_hpBefore) + ", Damage = " + string(_damageDealt) + ", HP After = " + string(_hpAfter));
+		}
+	}
+	
+	//Cooldown
+	canAttack = false;
+	alarm[0] = game_get_speed(gamespeed_fps) * 0.3;
+}
+
+
+/* Old attack
 if (_attack) {
     var _dirX = [1, 1, 0, -1, -1, -1, 0, 1];
     var _dirY = [0, -1, -1, -1, 0, 1, 1, 1];
@@ -176,3 +200,4 @@ if (_attack) {
     canAttack = false;
     alarm[0] = game_get_speed(gamespeed_fps) * 0.3;
 }
+*/
