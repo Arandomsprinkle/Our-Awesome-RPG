@@ -110,7 +110,6 @@ if (isWaiting && !_inputHandled && _inputPressed) {
 		}
 
 		call = noone;
-		instance_destroy();
 	}
 }
 

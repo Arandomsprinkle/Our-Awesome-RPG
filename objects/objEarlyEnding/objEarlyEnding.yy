@@ -10,8 +10,8 @@
   "name":"objEarlyEnding",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interactables",
-    "path":"folders/Objects/Interactables.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"objInteractable",

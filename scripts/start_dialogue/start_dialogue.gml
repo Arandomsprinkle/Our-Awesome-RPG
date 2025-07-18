@@ -2,7 +2,6 @@
 /// @desc Queue one or more dialogue messages
 
 function start_dialogue(_text, _portrait = -1, _call = -1, _choices = undefined) {
-	show_debug_message("start dialogue has been called");
     if (!instance_exists(objDialogueBox)) return;
 
     with (objDialogueBox) {
