@@ -64,4 +64,8 @@ function test_dialogue_01(stage = 0) {
 			break;
     }
 }
+
+function test_sign(stage = 0) {
+	start_dialogue("Welcome to the village! This message came from a parent-handled interaction!")
+}
 #endregion

@@ -4,10 +4,10 @@
 //Input
 var _inputX = (keyboard_check(global.keyRight)) - (keyboard_check(global.keyLeft));
 var _inputY = (keyboard_check(global.keyDown)) - (keyboard_check(global.keyUp));
-var _interact = (keyboard_check(global.keyInteract));
-var _attack = keyboard_check(global.keyAttack);
+var _interact = (keyboard_check_pressed(global.keyInteract));
+var _attack = keyboard_check_pressed(global.keyAttack);
 
-if global.isPaused exit
+if global.isPaused exit;
 
 //Movement
 if (!moving) {
@@ -62,18 +62,24 @@ else {
 }
 
 //Interaction
-if (!moving && _interact) {
+if (!moving && canInteract && _interact) {
+	canInteract = false;
     var _dirX = [1, 1, 0, -1, -1, -1, 0, 1];
 	var _dirY = [0, -1, -1, -1, 0, 1, 1, 1];
 	var _frontX = x + _dirX[directionIndex] * TILESIZE;
 	var _frontY = y + _dirY[directionIndex] * TILESIZE;
     var _target = collision_point(_frontX, _frontY, objInteractable, false, true);
 	
-	if (instance_exists(_target)) {
+	if !_target.active {
 		with _target {
 			active = true;
 		}
 	}
+}
+
+//For now just to make it so you don't continuously interact.
+if (!keyboard_check(global.keyInteract)) {
+	canInteract = true;
 }
 
 //Attacking

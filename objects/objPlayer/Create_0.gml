@@ -12,5 +12,6 @@ directionIndex = 0;
 totalDistance = 0;
 moveSpeed = 1;
 canAttack = true;
+canInteract = true;
 
 inventory = []; //Will flesh this out later.

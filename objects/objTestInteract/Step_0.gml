@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if global.isPaused exit;
+
 if active {
 	switch (funct) {
 		case "rock":
@@ -41,5 +43,8 @@ if active {
 			show_message("THIS IS TREE");
 			active = false;
 		break;
+		case "testSign":
+			test_sign(0);
+			active = false;
 	}
 }

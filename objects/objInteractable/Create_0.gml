@@ -1,3 +1,4 @@
+/*
 interact_range = 16;
 player_in_range = false;
 
